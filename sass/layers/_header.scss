@@ -1,0 +1,130 @@
+
+.logo {
+    padding-top: 24px;
+    margin-right: 93px;
+    padding-bottom: 25px;
+    
+    font-family: 'Raleway'sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.header {
+    border: 1px solid #ECECEC;
+}
+
+.header-studio {color: #000000;}
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display:flex;
+    gap: 50px;
+    
+}
+
+.menu__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--title-text-color);
+
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+
+.menu__link.current{
+    color: var(--accent-color);
+    position: relative;
+    &::after {
+        content:'';
+        display: block;
+    
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        bottom: -3px;
+    
+        background: #2196F3;
+        border-radius: 2px;
+    }
+}
+
+
+
+.header__auth {
+    margin-left: auto;
+}
+
+
+
+.auth__list {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+}
+
+
+
+
+.auth__mail,
+.auth__tel {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.auth__mail:hover,
+.auth__mail:focus {
+color: var(--accent-color);
+}
+
+.auth__mail:hover .mail-icon,
+.auth__mail:focus .mail-icon {
+    fill: var(--accent-color);
+}
+
+
+
+.auth__tel:hover .tel-icon,
+.auth__tel:focus .tel-icon {
+    fill: var(--accent-color);
+}
+
+.mail-icon, .tel-icon {
+    fill: #757575;
+    margin-right: 10px;
+    justify-items: center;
+    transition-property: fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
